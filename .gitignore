@@ -6,6 +6,7 @@ target/
 
 ### Environment ###
 .env
+application.properties
 application-local.properties
 
 ### STS ###
