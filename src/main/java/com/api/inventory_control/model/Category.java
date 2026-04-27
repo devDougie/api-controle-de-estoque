@@ -3,7 +3,7 @@ package com.api.inventory_control.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-//import java.util.List;
+import java.util.List;
 
 @Entity
 @Table(name = "categories")
@@ -22,6 +22,6 @@ public class Category {
 
     private String description;
 
-    //@OneToMany(mappedBy = "category")
-    //private List<Product> products;
+    @OneToMany(mappedBy = "category")
+    private List<Product> products;
 }

@@ -3,6 +3,8 @@ package com.api.inventory_control.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "suppliers")
 @Getter
@@ -15,16 +17,19 @@ public class Supplier {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "trade_name", nullable = false)
+    @Column(nullable = false)
     private String tradeName;
 
-    @Column(name = "company_name")
+    @Column(nullable = false)
     private String companyName;
 
-    @Column(nullable = false, unique = true, length = 14)
+    @Column(nullable = false, unique = true)
     private String cnpj;
 
     private String phone;
 
     private String email;
+
+    @OneToMany(mappedBy = "supplier")
+    private List<Product> products;
 }
