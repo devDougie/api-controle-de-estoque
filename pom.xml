@@ -96,7 +96,13 @@
             <version>0.12.6</version>
             <scope>runtime</scope>
         </dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.api</groupId>
+            <artifactId>inventory-control</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
