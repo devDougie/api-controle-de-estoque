@@ -4,7 +4,7 @@
  
 Este projeto foi desenvolvido com o objetivo de colocar em prática um conjunto de tecnologias do ecossistema Java/Spring em um contexto realista: uma API de controle de estoque com autenticação JWT, movimentações de entrada e saída, e documentação interativa via Swagger.
  
-**Não se trata de um sistema pronto para produção**, mas de um projeto estruturado para demonstrar domínio técnico em nível Júnior.
+**Não se trata de um sistema pronto para produção**, mas de um projeto estruturado para aprendizado.
  
 ---
  
